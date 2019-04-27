@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.text.Text?>
+
+<GridPane
+    xmlns:fx="http://javafx.com/fxml" fx:controller="gui.HomeController"
+    alignment="center" hgap="5" vgap="5">
+
+    <Text fx:id="title" text="Welcome to Check-in System" GridPane.columnIndex="0" ></Text>
+
+    <Button onAction="#toCheck" text="Check" GridPane.rowIndex="1"></Button>
+    <Button onAction="#toInfo" text="View information" GridPane.rowIndex="2"></Button>
+    <Button onAction="#toRegister" text="Register" GridPane.rowIndex="3"></Button>
+
+
+</GridPane>
