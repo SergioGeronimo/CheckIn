@@ -13,21 +13,17 @@
 <BorderPane xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.InfoController">
 
     <top>
-        <FlowPane>
-            <BorderPane.margin>
-                <Insets bottom="25" top="25" left="25" right="25"/>
-            </BorderPane.margin>
+        <FlowPane fx:id="top">
 
-            <TextField
-                    minWidth="200" maxWidth="200" fx:id="date"  disable="true" promptText="Current date"/>
+            <Label
+                    fx:id="date" text="Current date"/>
         </FlowPane>
     </top>
 
     <center>
         <GridPane alignment="center" hgap="50" vgap="25">
             <columnConstraints>
-                <ColumnConstraints percentWidth="40.0"/>
-                <ColumnConstraints percentWidth="40.0"/>
+                <ColumnConstraints prefWidth="300"/>
             </columnConstraints>
 
             <Label text="Register"  GridPane.halignment="CENTER" GridPane.rowIndex="0" />
