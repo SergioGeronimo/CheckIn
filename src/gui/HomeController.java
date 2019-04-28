@@ -13,7 +13,7 @@ public class HomeController extends BasicController {
 
     public void toCheck(ActionEvent event){
 
-        Scene scene = ((Node)event.getSource()).getScene();
+        Scene scene = findSceneByEvent(event);
         try {
             Parent root = FXMLLoader.load(getClass().getResource("/gui/check.fxml"));
             scene.setRoot(root);
@@ -24,7 +24,7 @@ public class HomeController extends BasicController {
 
     }
     public void toInfo(ActionEvent event){
-        Scene scene = ((Node)event.getSource()).getScene();
+        Scene scene = findSceneByEvent(event);
         try {
             Parent root = FXMLLoader.load(getClass().getResource("/gui/info.fxml"));
             scene.setRoot(root);
@@ -34,7 +34,7 @@ public class HomeController extends BasicController {
         }
     }
     public void toRegister(ActionEvent event){
-        Scene scene = ((Node)event.getSource()).getScene();
+        Scene scene = findSceneByEvent(event);
         try {
             Parent root = FXMLLoader.load(getClass().getResource("/gui/register.fxml"));
             scene.setRoot(root);
@@ -42,6 +42,10 @@ public class HomeController extends BasicController {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    public void exit(){
+        //exit safely
     }
 
 

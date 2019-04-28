@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.PasswordField?>
+<BorderPane xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.InfoController">
+
+    <top>
+        <FlowPane>
+            <BorderPane.margin>
+                <Insets bottom="25" top="25" left="25" right="25"/>
+            </BorderPane.margin>
+
+            <TextField
+                    minWidth="200" maxWidth="200" fx:id="date"  disable="true" promptText="Current date"/>
+        </FlowPane>
+    </top>
+
+    <center>
+        <GridPane alignment="center" hgap="50" vgap="25">
+            <columnConstraints>
+                <ColumnConstraints percentWidth="40.0"/>
+                <ColumnConstraints percentWidth="40.0"/>
+            </columnConstraints>
+
+            <Label text="Register"  GridPane.halignment="CENTER" GridPane.rowIndex="0" />
+            <TextField fx:id="workerID" promptText="ID"  GridPane.rowIndex="2" />
+            <PasswordField fx:id="confirmation" promptText="Confirmation"  GridPane.rowIndex="3" />
+
+            <Button onAction="#viewInformation" text="View my information"  GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+
+        </GridPane>
+    </center>
+    <bottom>
+        <FlowPane alignment="CENTER">
+            <BorderPane.margin>
+                <Insets bottom="25" top="25" left="25" right="25"/>
+            </BorderPane.margin>
+
+            <Button onAction="#toHome" text="Home" BorderPane.alignment="CENTER" />
+
+        </FlowPane>
+    </bottom>
+</BorderPane>

@@ -15,7 +15,7 @@ public class Initializer extends Application {
     public void start(Stage primaryStage) throws Exception {
 
         Parent root = FXMLLoader.load(getClass().getResource("gui/home.fxml"));
-        Scene scene = new Scene(root, 500, 500);
+        Scene scene = new Scene(root, 800, 500);
         scene.getStylesheets().add("gui/general.css");
         primaryStage.setTitle("Check-in System");
         primaryStage.setResizable(false);

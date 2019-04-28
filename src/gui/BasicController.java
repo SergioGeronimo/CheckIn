@@ -20,4 +20,8 @@ public class BasicController {
             e.printStackTrace();
         }
     }
+
+    public Scene findSceneByEvent(ActionEvent actionEvent){
+        return ((Node)actionEvent.getSource()).getScene();
+    }
 }

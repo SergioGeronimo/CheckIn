@@ -4,15 +4,49 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.text.Text?>
 
-<GridPane
-    xmlns:fx="http://javafx.com/fxml" fx:controller="gui.HomeController"
-    alignment="center" hgap="5" vgap="5">
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TextField?>
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.172-ea" fx:controller="gui.HomeController">
+    <top>
+        <FlowPane>
+            <BorderPane.margin>
+                <Insets bottom="25" top="25" left="25" right="25"/>
+            </BorderPane.margin>
 
-    <Text fx:id="title" text="Welcome to Check-in System" GridPane.columnIndex="0" ></Text>
-
-    <Button onAction="#toCheck" text="Check" GridPane.rowIndex="1"></Button>
-    <Button onAction="#toInfo" text="View information" GridPane.rowIndex="2"></Button>
-    <Button onAction="#toRegister" text="Register" GridPane.rowIndex="3"></Button>
+            <TextField
+                    minWidth="200" maxWidth="200" fx:id="date"  disable="true" promptText="Current date"/>
 
 
-</GridPane>
+        </FlowPane>
+    </top>
+    <center>
+        <GridPane
+                xmlns:fx="http://javafx.com/fxml"
+                alignment="center" hgap="50" vgap="25">
+                <columnConstraints>
+                    <ColumnConstraints percentWidth="80.0"/>
+                </columnConstraints>
+
+            <Text
+                    fx:id="title" text="Welcome to Check-in System" GridPane.columnIndex="0" GridPane.halignment="CENTER"/>
+
+            <Button
+                    onAction="#toCheck" text="Check" GridPane.rowIndex="1" GridPane.halignment="CENTER"/>
+            <Button
+                    onAction="#toRegister" text="Register" GridPane.rowIndex="2" GridPane.halignment="CENTER"/>
+            <Button
+                    onAction="#toInfo" text="View information" GridPane.rowIndex="3" GridPane.halignment="CENTER"/>
+
+
+
+        </GridPane>
+    </center>
+    <bottom>
+        <FlowPane alignment="CENTER" >
+            <BorderPane.margin>
+                <Insets bottom="25" top="25" />
+            </BorderPane.margin>
+            <Button onAction="#exit" text="Exit" BorderPane.alignment="CENTER"/>
+        </FlowPane>
+    </bottom>
+</BorderPane>
