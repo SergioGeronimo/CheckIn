@@ -28,15 +28,15 @@
                 <ColumnConstraints prefWidth="300"/>
             </columnConstraints>
 
-            <Label text="My info"  GridPane.halignment="CENTER" GridPane.rowIndex="0" GridPane.columnIndex="0" GridPane.columnSpan="2"/>
+            <Label fx:id="title" text="My info"  GridPane.halignment="CENTER" GridPane.rowIndex="0" GridPane.columnIndex="0" GridPane.columnSpan="2"/>
 
             <TextField fx:id="name" editable="false" promptText="Name(s)"  GridPane.rowIndex="2" GridPane.columnIndex="0" />
             <TextField fx:id="lastName" editable="false" promptText="Last name(s)"  GridPane.rowIndex="2" GridPane.columnIndex="1" />
 
             <Text text="Attendances:" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
-            <TextField fx:id="attendances" GridPane.rowIndex="5" GridPane.columnIndex="0" promptText="Attendances"/>
+            <TextField fx:id="attendances" editable="false" GridPane.rowIndex="5" GridPane.columnIndex="0" promptText="Attendances"/>
             <Text text="Number of absences" GridPane.rowIndex="4" GridPane.columnIndex="1"/>
-            <TextField fx:id="absences" GridPane.rowIndex="5" GridPane.columnIndex="1" promptText="Absences"/>
+            <TextField fx:id="absences" editable="false" GridPane.rowIndex="5" GridPane.columnIndex="1" promptText="Absences"/>
 
 
 

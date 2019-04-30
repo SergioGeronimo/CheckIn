@@ -26,7 +26,7 @@
                 <ColumnConstraints prefWidth="300"/>
             </columnConstraints>
 
-            <Label text="Register"  GridPane.halignment="CENTER" GridPane.rowIndex="0" />
+            <Label fx:id="title" text="Register"  GridPane.halignment="CENTER" GridPane.rowIndex="0" />
             <TextField fx:id="workerID" promptText="ID"  GridPane.rowIndex="2" />
             <PasswordField fx:id="confirmation" promptText="Confirmation"  GridPane.rowIndex="3" />
 

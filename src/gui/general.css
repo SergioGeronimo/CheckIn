@@ -1,42 +1,43 @@
 
 BorderPane{
-    -fx-background-color: #fff;
+    -fx-background-color: #f4f4f4;
 }
 
 TextField, PasswordField{
-    -fx-border-color: #2b2b2b;
-    -fx-text-fill: #2b2b2b;
+    -fx-border-color: #606060;
+    -fx-text-fill: #606060;
     -fx-border-radius: 0px;
     -fx-border-width: 2px;
-    
+    -fx-background-color: #f4f4f4;
 }
 
 #date{
-    -fx-text-fill: #fff;
+    -fx-text-fill: #f4f4f4;
     -fx-margin: 25px;
-    -fx-background-color: #46358c;
+    -fx-background-color: #846ecc;
     -fx-font-size: 14px;
 }
 
 TextFiel:disabled{
-    -fx-border-color: #46358c;
-    -fx-text-fill: #2b2b2b;
+    -fx-border-color: #846ecc;
+    -fx-text-fill: #606060;
+    -fx-border-radius: 0px;
 }
 
 Button{
-    -fx-border-color: #2b2b2b;
-    -fx-text-fill: #2b2b2b;
+    -fx-border-color: #606060;
+    -fx-text-fill: #606060;
     -fx-font-weight: bold;
-    -fx-background-color: #fff;
+    -fx-background-color: #f4f4f4;
     -fx-border-radius: 0px;
     -fx-border-width: 2px;
     -fx-pref-width: 300px;
 }
 
 Button:hover{
-    -fx-border-color: #46358c;
-    -fx-text-fill: #fff;
-    -fx-background-color: #46358c;
+    -fx-border-color: #846ecc;
+    -fx-text-fill: #f4f4f4;
+    -fx-background-color: #846ecc;
     -fx-border-radius: 0px;
     -fx-border-width: 2px;
     
@@ -45,7 +46,7 @@ Button:hover{
 
 
 #title{
-    -fx-text-fill: #46358c;
+    -fx-text-fill: #846ecc;
     -fx-font-weight: bold;
     -fx-font-size: 22px;
 }
@@ -53,6 +54,6 @@ Button:hover{
 
 
 #top{
-    -fx-background-color: #46358c;
+    -fx-background-color: #846ecc;
     -fx-padding: 20px;
 }

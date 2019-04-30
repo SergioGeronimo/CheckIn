@@ -9,13 +9,14 @@
 <?import javafx.scene.layout.FlowPane?>
 <?import javafx.scene.layout.GridPane?>
 
+<?import javafx.scene.control.PasswordField?>
 <BorderPane xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.RegisterController">
 
     <top>
         <FlowPane fx:id="top">
 
             <Label
-                    fx:id="date" text="Current date"/>
+                   fx:id="date" text="Current date"/>
         </FlowPane>
     </top>
 
@@ -25,11 +26,14 @@
                 <ColumnConstraints prefWidth="300"/>
             </columnConstraints>
 
-            <Label text="Register"  GridPane.halignment="CENTER" GridPane.rowIndex="0" />
+            <Label fx:id="title" text="Register"  GridPane.halignment="CENTER" GridPane.rowIndex="0" />
             <TextField fx:id="name" promptText="Name(s)"  GridPane.rowIndex="2" />
             <TextField fx:id="lastName" promptText="Last name(s)"  GridPane.rowIndex="3" />
 
-            <Button onAction="#register" text="Register"  GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+            <PasswordField fx:id="pin" promptText="Your PIN" GridPane.rowIndex="5"/>
+            <PasswordField fx:id="confirmPIN" promptText="Confirm PIN" GridPane.rowIndex="6"/>
+
+            <Button onAction="#register" text="Register"  GridPane.halignment="CENTER" GridPane.rowIndex="7" />
 
         </GridPane>
     </center>
